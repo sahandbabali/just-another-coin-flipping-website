@@ -4,4 +4,6 @@ Changes to do:
 - use list group with badges for flip history
 - use progress bars with labels for showing statistics
 - adding stats such as highest number of heads or yails in a row
+- adding automated coin flipping settings on top of the coin card
+- adding export data button for spreadsheet file or google sheets
 
