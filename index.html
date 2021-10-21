@@ -66,9 +66,22 @@
                         >Number of flips</label
                       >
                       <input
+                        value="10"
                         type="number"
                         class="form-control"
                         id="autofilipnum"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="delaytime" class="form-label"
+                        >Delay(ms)</label
+                      >
+                      <input
+                        value="500"
+                        type="number"
+                        class="form-control"
+                        id="delaytime"
                       />
                     </div>
 
@@ -87,6 +100,14 @@
           <img id="coinimg" class="mb-3" src="./coin128.png" alt="coin128" />
           <br />
           <a id="flipbutton" href="#" class="btn btn-warning">Flip the Coin</a>
+
+          <button
+            id="resetbutton"
+            type="button"
+            class="btn btn-outline-secondary"
+          >
+            Reset
+          </button>
         </div>
         <div class="card-footer text-muted">
           <!-- start of progress bar badges -->

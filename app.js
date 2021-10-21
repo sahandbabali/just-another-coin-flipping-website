@@ -5,6 +5,7 @@ var totalflips = 0;
 
 document.getElementById("flipbutton").addEventListener("click", flipit);
 document.getElementById("autoflipsub").addEventListener("click", autoflip);
+document.getElementById("resetbutton").addEventListener("click", reset);
 
 function flipit() {
   let randombinaryvalue = Math.round(Math.random());
@@ -101,10 +102,18 @@ function addtotable(lastflip) {
 }
 
 function autoflip() {
+  document.getElementById("collapseOne").classList.remove("show");
+
   let autonum = document.getElementById("autofilipnum").value;
+  let delaytime = document.getElementById("delaytime").value;
+
   for (let index = 0; index < autonum; index++) {
     setTimeout(function timer() {
       flipit();
-    }, index * 500);
+    }, index * delaytime);
   }
+}
+
+function reset() {
+  window.location.reload(true);
 }
