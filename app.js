@@ -78,6 +78,7 @@ function addtotable(lastflip) {
   var cell3 = row.insertCell(2);
 
   cell1.innerHTML = `${totalflips}`;
+  cell1.scope = "row";
 
   var current = new Date();
   cell2.innerHTML = `${current.toLocaleTimeString()}`;
