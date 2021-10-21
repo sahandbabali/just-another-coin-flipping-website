@@ -45,7 +45,7 @@ function updateprogressbar() {
     headspercent == 100;
   }
 
-  console.log(`headspercent ${headspercent}`);
+  //console.log(`headspercent ${headspercent}`);
   document.getElementById("headsbar").style.width = `${headspercent}%`;
   document.getElementById("headsbar").innerHTML = `${headspercent}%`;
 
@@ -58,7 +58,7 @@ function updateprogressbar() {
     tailspercent == 100;
   }
 
-  console.log(`tailspercent ${tailspercent}`);
+  // console.log(`tailspercent ${tailspercent}`);
   document.getElementById("tailsbar").style.width = `${tailspercent}%`;
   document.getElementById("tailsbar").innerHTML = `${tailspercent}%`;
 }
