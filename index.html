@@ -43,13 +43,22 @@
         <div class="card-footer text-muted">
           <!-- start of progress bar badges -->
           <div class="d-flex justify-content-between">
-            <h4><span class="badge badge-primary">Heads: 0</span></h4>
-            <h4><span class="badge badge-success">Tails: 0</span></h4>
+            <h4>
+              <span class="badge badge-primary"
+                >Heads: <span id="headsbadge">0</span>
+              </span>
+            </h4>
+            <h4>
+              <span class="badge badge-success"
+                >Tails: <span id="tailsbadge">0</span>
+              </span>
+            </h4>
           </div>
           <!-- end of progress bar badges -->
           <!-- start of progress bar -->
           <div class="progress">
             <div
+              id="headsbar"
               class="progress-bar"
               role="progressbar"
               style="width: 50%"
@@ -60,6 +69,7 @@
               50%
             </div>
             <div
+              id="tailsbar"
               class="progress-bar bg-success"
               role="progressbar"
               style="width: 50%"
