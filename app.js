@@ -6,6 +6,7 @@ var totalflips = 0;
 document.getElementById("flipbutton").addEventListener("click", flipit);
 document.getElementById("autoflipsub").addEventListener("click", autoflip);
 document.getElementById("resetbutton").addEventListener("click", reset);
+var totalflipsstat = document.getElementById("totalflipsstat");
 
 function flipit() {
   let randombinaryvalue = Math.round(Math.random());
@@ -27,6 +28,7 @@ function flipit() {
     document.getElementById("coinimg").src = "coin128-1.png";
     document.getElementById("flipresult").innerHTML = "Tails";
     tailscount++;
+    totalflipsstat.innerHTML = `${totalflips}`;
     updatebadges();
     // update the progress bar
     updateprogressbar();
