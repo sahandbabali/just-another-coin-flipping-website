@@ -13,7 +13,7 @@ function flipit() {
   if (randombinaryvalue == 0) {
     // change the coin pic to 0
     document.getElementById("coinimg").src = "coin128-0.png";
-    document.getElementById("flipresult").innerHTML = "Head";
+    document.getElementById("flipresult").innerHTML = "Heads";
     headscount++;
     updatebadges();
     // update the progress bar
@@ -23,7 +23,7 @@ function flipit() {
   } else if (randombinaryvalue == 1) {
     // change the coin pic to 1
     document.getElementById("coinimg").src = "coin128-1.png";
-    document.getElementById("flipresult").innerHTML = "Tail";
+    document.getElementById("flipresult").innerHTML = "Tails";
     tailscount++;
     updatebadges();
     // update the progress bar
@@ -70,4 +70,4 @@ function updatebadges() {
 
 function addtotable(lastflip) {}
 
-flipit();
+//flipit();
