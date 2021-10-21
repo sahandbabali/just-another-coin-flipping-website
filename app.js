@@ -4,6 +4,7 @@ var tailscount = 0;
 var totalflips = 0;
 
 document.getElementById("flipbutton").addEventListener("click", flipit);
+document.getElementById("autoflipsub").addEventListener("click", autoflip);
 
 function flipit() {
   let randombinaryvalue = Math.round(Math.random());
@@ -96,5 +97,14 @@ function addtotable(lastflip) {
       `row length ${document.getElementById("restable").rows.length}`
     );
     document.getElementById("restable").deleteRow(rowlength - 1);
+  }
+}
+
+function autoflip() {
+  let autonum = document.getElementById("autofilipnum").value;
+  for (let index = 0; index < autonum; index++) {
+    setTimeout(function timer() {
+      flipit();
+    }, index * 500);
   }
 }
