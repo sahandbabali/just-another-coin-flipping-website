@@ -47,7 +47,7 @@ function updateprogressbar() {
 
   console.log(`headspercent ${headspercent}`);
   document.getElementById("headsbar").style.width = `${headspercent}%`;
-  document.getElementById("headsbar").innerHTML = headspercent;
+  document.getElementById("headsbar").innerHTML = `${headspercent}%`;
 
   var tailspercent = (tailscount * 100) / totalflips;
   tailspercent = Math.round(tailspercent, 0);
@@ -60,7 +60,7 @@ function updateprogressbar() {
 
   console.log(`tailspercent ${tailspercent}`);
   document.getElementById("tailsbar").style.width = `${tailspercent}%`;
-  document.getElementById("tailsbar").innerHTML = tailspercent;
+  document.getElementById("tailsbar").innerHTML = `${tailspercent}%`;
 }
 
 function updatebadges() {
