@@ -88,6 +88,13 @@ function addtotable(lastflip) {
   } else if (lastflip == 1) {
     cell3.innerHTML = `<span class="badge bg-success">Tails</span>`;
   }
-}
 
-//flipit();
+  let rowlength = document.getElementById("restable").rows.length;
+
+  if (rowlength == 10) {
+    console.log(
+      `row length ${document.getElementById("restable").rows.length}`
+    );
+    document.getElementById("restable").deleteRow(rowlength - 1);
+  }
+}
