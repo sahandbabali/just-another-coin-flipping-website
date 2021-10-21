@@ -68,6 +68,25 @@ function updatebadges() {
   document.getElementById("tailsbadge").innerHTML = `${tailscount}`;
 }
 
-function addtotable(lastflip) {}
+function addtotable(lastflip) {
+  var table = document.getElementById("restable");
+
+  var row = table.insertRow(1);
+
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+
+  cell1.innerHTML = `${totalflips}`;
+
+  var current = new Date();
+  cell2.innerHTML = `${current.toLocaleTimeString()}`;
+
+  if (lastflip == 0) {
+    cell3.innerHTML = `<span class="badge bg-primary">Heads</span>`;
+  } else if (lastflip == 1) {
+    cell3.innerHTML = `<span class="badge bg-success">Tails</span>`;
+  }
+}
 
 //flipit();
